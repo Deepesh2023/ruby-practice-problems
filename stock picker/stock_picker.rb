@@ -5,7 +5,7 @@ def stock_picker (stocks)
     price_difference.push(stocks[i..stocks.length - 1].max - stocks[i])
   end
   buying_day = price_difference.index(price_difference.max)
-  selling_day = stocks.index(best_stocks.max + stocks[buying_day])
+  selling_day = stocks.index(price_difference.max + stocks[buying_day])
 
   [buying_day, selling_day]
 end
