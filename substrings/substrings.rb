@@ -2,7 +2,6 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 
 def substrings (strings, dictionary)
   string_count = Hash.new(0)
-  word = nil
   strings.each do |string|
     0.upto(string.length - 1) do |i|
       i.upto(string.length - 1) do |j|
